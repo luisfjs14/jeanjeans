@@ -16,24 +16,6 @@ O site institucional da Jean Jeans Store será um ponto de contato online para c
 - Google Fonts (para tipografia)
 - Favicon personalizado
 
-## 📐 Estrutura Inicial do Projeto
-
-jeanjeansstore/
-├── index.html
-├── sobre.html
-├── produtos.html
-├── galeria.html
-├── contato.html
-├── css/
-│ └── style.css
-├── js/
-│ └── script.js
-├── img/
-│ └── (fotos da loja, banners, logo, produtos)
-├── favicon.ico
-└── README.md
-
-
 ## 📱 Funcionalidades Previstas
 
 - Página inicial com destaques e chamada para WhatsApp.
