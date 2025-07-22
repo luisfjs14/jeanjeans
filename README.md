@@ -45,5 +45,5 @@ O site institucional da Jean Jeans Store será um ponto de contato online para c
 
 ---
 
-Desenvolvido por [Seu Nome].
+Desenvolvido por Luis F. de J. Soares.
 
