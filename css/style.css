@@ -267,43 +267,44 @@ a {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-    }
-    
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #00296b;
-        border-top: 1px solid #0d1321;
-        text-align: center;
-        padding-top: 20px;
-    }
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #00296b;
+    border-top: 1px solid #0d1321;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; /* <-- aqui entra o espacinho */
+  }
 
-    .nav-menu.active {
-        display: flex;
-    }
+  .nav-menu.active {
+    display: flex;
+  }
 
-    .main-slider {
-        height: 300px;
-    }
+  .main-slider {
+    height: 300px;
+  }
 
-    .slide-content h1 {
-        font-size: 30px;
-    }
+  .slide-content h1 {
+    font-size: 30px;
+  }
 
-    .slide-content p, .slide-content h3 {
-        font-size: 16px;
-    }
+  .slide-content p, .slide-content h3 {
+    font-size: 16px;
+  }
 
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 
 .novidades {
@@ -352,6 +353,7 @@ a {
   font-size: 1rem;
   margin: 10px 0 5px;
   font-weight: 500;
+  color: #0d3878; /* azul forte */
 }
 
 .novidade-card .preco {
@@ -426,6 +428,13 @@ a {
   font-family: 'Poppins', serif;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: #0d3878; /* azul vivo */
+}
+
+.influencer-text h2 span {
+  font-style: italic;
+  font-weight: 400;
+  color: #e63946; /* vermelho vibrante */
 }
 
 .influencer-text span {
@@ -491,11 +500,13 @@ scroll-padding-left: 10px;
   font-size: 2rem;
   font-family: 'Poppins', serif;
   margin-bottom: 30px;
+  color: #0d3878; /* azul forte */
 }
 
 .categorias .sec-title span {
   font-style: italic;
   font-weight: 600;
+  color: #e63946; /* vermelho vibrante */
 }
 
 .categorias-slider {
@@ -587,16 +598,21 @@ scroll-padding-left: 10px;
 .insta-text h2 {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #111;
+  color: #0d3878; /* azul vivo */
 }
 
 .insta-text span {
-  color: #0d3878;
+  color: #e63946; /* vermelho vibrante */
 }
 
 .insta-text p {
   font-size: 1rem;
   margin-top: 10px;
+  color: #222; /* preto suave para máxima legibilidade */
+}
+
+.insta-text strong {
+  color: #0d3878; /* destaque no @jeanjeansstore */
 }
 
 .newsletter h3,
@@ -656,3 +672,242 @@ scroll-padding-left: 10px;
   align-items: center;
   text-align: center;
 }
+
+/* Página de Produtos */
+.produtos-page {
+  padding: 40px 0;
+  background: #fff;
+  color: #222;
+}
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.produto-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.produto-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.produto-card h3 {
+  margin: 10px 0;
+}
+.produto-card .preco {
+  color: #0d3878;
+  font-weight: bold;
+}
+
+/* Página de Contato */
+.contato-page {
+  padding: 40px 0;
+  background: #fff;
+  color: #222;
+}
+.contato-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contato-form input, 
+.contato-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+.contato-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Página Sobre */
+.sobre-page {
+  padding: 40px 0;
+  background: #fff;
+  color: #222;
+}
+.sobre-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+.sobre-texto {
+  flex: 1 1 300px;
+}
+.sobre-img {
+  flex: 1 1 300px;
+}
+.sobre-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* HERO Sobre */
+.sobre-hero {
+  background: url('../img/calca-sarja-sawary-boot-cut-274683--1-.webp') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+.sobre-hero-content h1 {
+  font-size: 2.5rem;
+}
+.sobre-hero-content span {
+  color: #ffd700;
+}
+
+/* Quem Somos */
+.sobre-info {
+  background: #fff;
+  color: #222;
+  padding: 50px 20px;
+}
+.sobre-desc {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.valores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.valor-item {
+  flex: 1 1 250px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.valor-item i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0d3878;
+}
+
+/* Localização */
+.sobre-local {
+  padding: 50px 20px;
+  background: #fafafa;
+}
+.sobre-local-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.sobre-contatos {
+  flex: 1;
+  min-width: 250px;
+}
+.sobre-contatos h3 {
+  color: #0d3878; /* azul vivo */
+  margin-bottom: 15px;
+}
+
+.sobre-contatos p {
+  color: #222; /* texto escuro para contraste */
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.sobre-contatos i {
+  color: #e63946; /* vermelho vibrante para ícones */
+  margin-right: 6px;
+}
+.sobre-map {
+  flex: 2;
+  min-width: 300px;
+}
+
+/* Redes Sociais */
+.sobre-social {
+  text-align: center;
+  padding: 40px 20px;
+  background: #00296b;
+  color: white;
+}
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.social-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+.insta { background: #e4405f; }
+.face { background: #1877f2; }
+.whats { background: #25d366; }
+
+/* Contato */
+.contato-hero {
+  background: #00296b;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+.contato-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  background: white;
+  color: #222;
+}
+.contato-form-area, .contato-info-area {
+  flex: 1;
+  min-width: 280px;
+}
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contato-form input, .contato-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.contato-form textarea {
+  resize: vertical;
+}
+
+.footer {
+  background-color: #00296b;
+  color: #fff;
+  padding: 40px 0 20px; /* ajuste para o espaçamento extra */
+  text-align: left;
+}
+
+.footer .container {
+  position: relative;
+}
+
+.footer-separator {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.rodape-copy {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
