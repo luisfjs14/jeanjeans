@@ -596,7 +596,7 @@ scroll-padding-left: 10px;
 }
 
 .insta-text h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: bold;
   color: #0d3878; /* azul vivo */
 }
@@ -606,7 +606,7 @@ scroll-padding-left: 10px;
 }
 
 .insta-text p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-top: 10px;
   color: #222; /* preto suave para máxima legibilidade */
 }
@@ -832,7 +832,7 @@ scroll-padding-left: 10px;
 /* Redes Sociais */
 .sobre-social {
   text-align: center;
-  padding: 40px 20px;
+  padding: 5px 5px;
   background: #00296b;
   color: white;
 }
