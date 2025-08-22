@@ -52,7 +52,7 @@ a {
 
 /* Estilização do logo */
 .logo-img {
-    max-height: 60px;
+    max-height: 30px;
     width: auto;
 }
 
@@ -910,4 +910,5 @@ scroll-padding-left: 10px;
   font-size: 14px;
   margin-top: 10px;
 }
+
 
